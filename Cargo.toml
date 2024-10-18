@@ -12,11 +12,12 @@ categories = ["cryptography::cryptocurrencies"]
 rust-version = "1.80.0"
 
 [dependencies]
-ring = "0.17"
+sha2 = "0.10"
+#ring = "0.17"
 
 [target.'cfg(target_arch = "x86_64")'.dependencies]
 cpufeatures = "0.2"
-sha2 = "0.10"
+
 
 [dev-dependencies]
 rustc-hex = "2"
